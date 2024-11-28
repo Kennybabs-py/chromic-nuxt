@@ -1,0 +1,17 @@
+{
+  "id": "collections",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      }
+    }
+  },
+  "label": "Collections",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

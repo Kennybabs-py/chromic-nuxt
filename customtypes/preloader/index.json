@@ -1,0 +1,17 @@
+{
+  "id": "preloader",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title"
+        }
+      }
+    }
+  },
+  "label": "Preloader",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "home",
+  "json": {
+    "Main": {
+      "gallery": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Image"
+              }
+            }
+          },
+          "label": "Gallery"
+        }
+      },
+      "collection": {
+        "type": "Text",
+        "config": {
+          "label": "Collection"
+        }
+      },
+      "button": {
+        "type": "Text",
+        "config": {
+          "label": "Button"
+        }
+      },
+      "collections": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["collections"],
+          "label": "Collections"
+        }
+      }
+    }
+  },
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

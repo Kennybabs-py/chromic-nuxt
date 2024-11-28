@@ -1,0 +1,19 @@
+.about {
+  @extend %page;
+  padding: 10rem 0 0;
+  opacity: 0;
+}
+.about__wrapper {
+  padding: 10rem 0 0;
+}
+.about__title {
+  @extend %title-100;
+
+  max-width: 127rem;
+  margin: auto;
+  text-align: center;
+
+  @include media("<phone") {
+    max-width: 67.7rem;
+  }
+}
