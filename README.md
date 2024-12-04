@@ -1,6 +1,6 @@
 # CHROMIC-NUXT
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## A re-write of creative development project from Pug and Express to Nuxt
 
 ## Setup
 
