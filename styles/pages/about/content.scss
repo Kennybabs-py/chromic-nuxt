@@ -16,15 +16,6 @@
   &:nth-child(8) {
     justify-content: flex-start;
   }
-
-  @include media("<phone") {
-    &:nth-child(5) {
-      justify-content: flex-end;
-    }
-    &:nth-child(8) {
-      justify-content: flex-start;
-    }
-  }
 }
 .about__content__wrapper {
   display: flex;
@@ -79,6 +70,10 @@
   width: 18rem;
   font-size: 2.4rem;
   text-transform: uppercase;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 
   .about__content:nth-child(8) & {
     font-size: 2rem;

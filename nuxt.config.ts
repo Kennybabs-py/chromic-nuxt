@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     "@/plugins/prismic-preloader.ts",
     "@/plugins/prismic-home.ts",
     "@/plugins/prismic-collections.ts",
+    "@/plugins/prismic-about.ts",
   ],
   prismic: {
     endpoint: repositoryName,

@@ -1,29 +1,19 @@
 <script setup lang="ts">
 import type {
-  CollectionDocumentData,
   CollectionDocument,
-  CollectionsDocument,
-  CollectionDocumentDataProductsItem,
   HomeDocumentData,
   HomeDocumentDataGalleryItem,
 } from "~/prismicio-types";
-
-const { template } = useTemplate();
-template.value = "home";
+import { handleIndexResolver } from "~/helpers";
 
 const { $home, $collections } = useNuxtApp();
 const home_data = $home as unknown as HomeDocumentData;
 const home_gallery = home_data.gallery as HomeDocumentDataGalleryItem[];
 const collections = $collections as unknown as CollectionDocument[];
-
-function handleIndexResolver(index: number) {
-  let arr = ["One", "Two", "Three", "Four", "Five"];
-  return arr[index];
-}
 </script>
 
 <template>
-  <div class="home">
+  <div class="home" data-background="#c97164" data-color="#f9f1e7">
     <div class="home__wrapper">
       <div class="home__titles">
         <div
@@ -57,13 +47,9 @@ function handleIndexResolver(index: number) {
         </figure>
       </div>
 
-      <a href="" class="home__link">
+      <a href="/collections" class="home__link">
         {{ home_data.button }}
-        <svg
-          class="home__link__icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 288 0"
-        >
+        <svg class="home__link__icon" xmlns="http://www.w3.org/2000/svg">
           <path
             stroke="currentColor"
             fill="none"
